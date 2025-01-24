@@ -5,7 +5,16 @@ This repository contains a script which downloads star data from the Gaia Data R
 As CosmoScout VR is currently not able to display all billions of stars from the catalog, a subset of the brightest stars is generated.
 Since the script takes very long to run, we provide pre-generated cataloge subsets as a download here.
 
-You can choose between two, five, and 10 million brightest stars.
+You can choose between 1, 2.5, 5, 10, and 50 million brightest stars (filtered according to the G-band mean magnitude).
+
+## Data Format
+
+To reduce the data size, only the columns required by CosmoScout VR are included in the CSV files.
+The CSV header looks like this:
+
+
+source_id|hipparcos_id|ra|dec|parallax|phot_g_mean_mag|bp_rp
+--|--|--|--|--|--|--
 
 ## Download and Configuration
 
