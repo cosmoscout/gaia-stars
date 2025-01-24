@@ -34,7 +34,7 @@ If you want to use less or more stars, download the respective CSV file from the
 ```
 
 > [!NOTE]
-> If you changed the path to a different CSV file, you will have delete the `star_cahce.dat` next to CosmoScout VR's executable. Else CosmoScout VR will not reload the new CSV file.
+> If you changed the path to a different CSV file, you will have delete the `star_cache.dat` next to CosmoScout VR's executable. Else CosmoScout VR will not reload the new CSV file.
 
 
 ## Attribution
