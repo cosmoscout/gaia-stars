@@ -12,11 +12,10 @@ You can choose between 1, 2.5, 5, 10, and 25 million brightest stars (filtered a
 To reduce the data size, only the columns required by CosmoScout VR are included in the CSV files.
 The CSV header looks like this:
 
+| source_id | hipparcos_id | ra  | dec | parallax | phot_g_mean_mag | bp_rp |
+| --------- | ------------ | --- | --- | -------- | --------------- | ----- |
 
-source_id|hipparcos_id|ra|dec|parallax|phot_g_mean_mag|bp_rp
---|--|--|--|--|--|--
-
-## Download and Configuration
+## Download Pre-Generated Data and Configuration
 
 CosmoScout VR downloads the five-million dataset per default.
 If you want to use less or more stars, download the respective CSV file from the [releases section](https://github.com/cosmoscout/gaia-stars/releases) and configure the `csp-stars` plugin like this:
@@ -36,6 +35,16 @@ If you want to use less or more stars, download the respective CSV file from the
 > [!NOTE]
 > If you changed the path to a different CSV file, you will have delete the `star_cache.dat` next to CosmoScout VR's executable. Else CosmoScout VR will not reload the new CSV file.
 
+## Running the Script
+
+If you want to generate the CSV file yourself, you can run the script like this:
+
+```bash
+python3 extract_brightest_stars_from_gaia_gdr3.py
+```
+
+This will download the Gaia Data Release 3 chunk by chunk and write the 5 million brightest stars to a CSV file.
+The numbers of stars (and some other parameters) can be adjusted in the script.
 
 ## Attribution
 
